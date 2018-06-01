@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tag1=v3.9.14
+tag1=v3.9.27
 # OCP component.
 docker pull registry.access.redhat.com/openshift3/ose-ansible:$tag1
 docker pull registry.access.redhat.com/openshift3/ose-cluster-capacity:$tag1
@@ -20,6 +20,7 @@ docker pull registry.access.redhat.com/openshift3/efs-provisioner:$tag1
 docker pull registry.access.redhat.com/openshift3/node:$tag1
 docker pull registry.access.redhat.com/openshift3/openvswitch:$tag1
 docker pull registry.access.redhat.com/rhel7/etcd
+docker pull registry.access.redhat.com/openshift3/ose-web-console:$tag1
 
 # Logging and Metrics
 docker pull registry.access.redhat.com/openshift3/logging-auth-proxy:$tag1
@@ -34,11 +35,28 @@ docker pull registry.access.redhat.com/openshift3/metrics-hawkular-metrics:$tag1
 docker pull registry.access.redhat.com/openshift3/metrics-hawkular-openshift-agent:$tag1
 docker pull registry.access.redhat.com/openshift3/metrics-heapster:$tag1
 
+docker pull registry.access.redhat.com/openshift3/prometheus:$tag1
+docker pull registry.access.redhat.com/openshift3/prometheus-alert-buffer:$tag1
+docker pull registry.access.redhat.com/openshift3/prometheus-alertmanager:$tag1
+docker pull registry.access.redhat.com/openshift3/prometheus-node-exporter:$tag1
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-postgresql:$tag1
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-memcached:$tag1
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-app-ui:$tag1
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-app:$tag1
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-embedded-ansible:$tag1
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-httpd:$tag1
+docker pull registry.access.redhat.com/cloudforms46/cfme-httpd-configmap-generator:$tag1
+docker pull registry.access.redhat.com/rhgs3/rhgs-server-rhel7:$tag1
+docker pull registry.access.redhat.com/rhgs3/rhgs-volmanager-rhel7:$tag1
+docker pull registry.access.redhat.com/rhgs3/rhgs-gluster-block-prov-rhel7:$tag1
+docker pull registry.access.redhat.com/rhgs3/rhgs-s3-server-rhel7:$tag1
+
 # Service Catalog
 docker pull registry.access.redhat.com/openshift3/ose-service-catalog:$tag1
 docker pull registry.access.redhat.com/openshift3/ose-ansible-service-broker:$tag1
 docker pull registry.access.redhat.com/openshift3/mediawiki-apb:$tag1
 docker pull registry.access.redhat.com/openshift3/postgresql-apb:$tag1
+docker pull registry.access.redhat.com/openshift3/ose-template-service-broker:$tag1
 
 # Registry Console
 docker pull registry.access.redhat.com/openshift3/registry-console:$tag1
@@ -48,3 +66,14 @@ docker pull registry.access.redhat.com/openshift3/efs-provisioner
 docker pull registry.access.redhat.com/openshift3/logging-deployer
 docker pull registry.access.redhat.com/openshift3/metrics-deployer
 
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-postgresql
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-memcached
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-app-ui
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-app
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-embedded-ansible
+docker pull registry.access.redhat.com/cloudforms46/cfme-openshift-httpd
+docker pull registry.access.redhat.com/cloudforms46/cfme-httpd-configmap-generator
+docker pull registry.access.redhat.com/rhgs3/rhgs-server-rhel7
+docker pull registry.access.redhat.com/rhgs3/rhgs-volmanager-rhel7
+docker pull registry.access.redhat.com/rhgs3/rhgs-gluster-block-prov-rhel7
+docker pull registry.access.redhat.com/rhgs3/rhgs-s3-server-rhel7
