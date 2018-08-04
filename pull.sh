@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tag1=v3.9.27
+tag1=v3.9.33
 # OCP component.
 docker pull registry.access.redhat.com/openshift3/ose-ansible:$tag1
 docker pull registry.access.redhat.com/openshift3/ose-cluster-capacity:$tag1
@@ -14,13 +14,14 @@ docker pull registry.access.redhat.com/openshift3/ose-haproxy-router:$tag1
 docker pull registry.access.redhat.com/openshift3/ose-keepalived-ipfailover:$tag1
 docker pull registry.access.redhat.com/openshift3/ose-pod:$tag1
 docker pull registry.access.redhat.com/openshift3/ose-sti-builder:$tag1
+docker pull registry.access.redhat.com/openshift3/ose-template-service-broker:$tag1
+docker pull registry.access.redhat.com/openshift3/ose-web-console:$tag1
 docker pull registry.access.redhat.com/openshift3/ose:$tag1
 docker pull registry.access.redhat.com/openshift3/container-engine:$tag1
 docker pull registry.access.redhat.com/openshift3/efs-provisioner:$tag1
 docker pull registry.access.redhat.com/openshift3/node:$tag1
 docker pull registry.access.redhat.com/openshift3/openvswitch:$tag1
 docker pull registry.access.redhat.com/rhel7/etcd
-docker pull registry.access.redhat.com/openshift3/ose-web-console:$tag1
 
 # Logging and Metrics
 docker pull registry.access.redhat.com/openshift3/logging-auth-proxy:$tag1
@@ -29,6 +30,7 @@ docker pull registry.access.redhat.com/openshift3/logging-deployer:$tag1
 docker pull registry.access.redhat.com/openshift3/logging-elasticsearch:$tag1
 docker pull registry.access.redhat.com/openshift3/logging-fluentd:$tag1
 docker pull registry.access.redhat.com/openshift3/logging-kibana:$tag1
+docker pull registry.access.redhat.com/openshift3/oauth-proxy:$tag1
 docker pull registry.access.redhat.com/openshift3/metrics-cassandra:$tag1
 docker pull registry.access.redhat.com/openshift3/metrics-deployer:$tag1
 docker pull registry.access.redhat.com/openshift3/metrics-hawkular-metrics:$tag1
@@ -50,6 +52,7 @@ docker pull registry.access.redhat.com/rhgs3/rhgs-server-rhel7:$tag1
 docker pull registry.access.redhat.com/rhgs3/rhgs-volmanager-rhel7:$tag1
 docker pull registry.access.redhat.com/rhgs3/rhgs-gluster-block-prov-rhel7:$tag1
 docker pull registry.access.redhat.com/rhgs3/rhgs-s3-server-rhel7:$tag1
+
 
 # Service Catalog
 docker pull registry.access.redhat.com/openshift3/ose-service-catalog:$tag1

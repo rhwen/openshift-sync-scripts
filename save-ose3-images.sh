@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # OCP component.
-docker save -o /home/ose3-images-v3.9.27.tar \
+docker save -o /home/ose3-images-v3.9.31.tar \
  registry.access.redhat.com/openshift3/ose-ansible  \
  registry.access.redhat.com/openshift3/ose-cluster-capacity  \
  registry.access.redhat.com/openshift3/ose-deployer  \
